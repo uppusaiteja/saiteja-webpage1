@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant Order Page</title>
+  <style>
+    body {
+      background-image: url('background.jpg');
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+
+    #navbar {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    #navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    #navbar ul li {
+      float: left;
+      margin-right: 20px;
+    }
+
+    #navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    #navbar ul li a:hover {
+      color: #eaeaea;
+    }
+
+    #content {
+      padding: 20px;
+      color: #333;
+    }
+
+    #footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Specials</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <div id="content">
+    <h1>Online Restaurant Order</h1>
+    <input type="text" placeholder="Search food" id="searchInput">
+    
+    <!-- Food Items -->
+    <div class="food-item">
+      <h3>Food Item 1</h3>
+      <video src="food1.mp4" controls></video>
+      <p>Description of Food Item 1</p>
+      <button class="order-btn">Order Now</button>
+    </div>
+
+    <div class="food-item">
+      <h3>Food Item 2</h3>
+      <video src="food2.mp4" controls></video>
+      <p>Description of Food Item 2</p>
+      <button class="order-btn">Order Now</button>
+    </div>
+    
+    <!-- Delivery Address -->
+    <h2>Delivery Address</h2>
+    <form>
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required>
+      
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" required>
+      
+      <label for="zip">Zip Code:</label>
+      <input type="text" id="zip" name="zip" required>
+      
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+
+  <div id="footer">
+    <p>Contact us at contact@example.com</p>
+  </div>
+
+  <script>
+    // JavaScript code can be added here for interactivity
+  </script>
+</body>
+</html>
